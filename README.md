@@ -204,7 +204,7 @@ Paragraph:SetValue("Updated text!") -- Updates content
 
   
 
-Methods:
+#### Methods:
 
   
 
@@ -316,7 +316,7 @@ Options.MyToggle:SetValue(true)
 
   
 
-Methods:
+#### Methods:
 
   
 
@@ -404,7 +404,7 @@ Slider:SetValue(3)
 
   
 
-Methods:
+#### Methods:
 
   
 
@@ -470,7 +470,7 @@ Dropdown:SetValue("two")
 
   
 
-Methods:
+#### Methods:
 
   
 
@@ -626,7 +626,7 @@ Colorpicker:SetValueRGB(Color3.fromRGB(0, 255, 140))
 
   
 
-Methods:
+#### Methods:
 
   
 
@@ -764,7 +764,7 @@ Keybind:SetValue("MB2", "Toggle")
 
   
 
-Methods:
+#### Methods:
 
   
 
@@ -852,7 +852,7 @@ end)
 
   
 
-### Methods:
+#### Methods:
 
   
 
@@ -968,7 +968,7 @@ SaveManager:LoadAutoloadConfig()
 
 ```
 
-Methods:
+#### Methods:
 
   
 
@@ -1012,7 +1012,7 @@ InterfaceManager:BuildInterfaceSection(Tabs.Settings)
 
 ```
 
-Methods:
+#### Methods:
 
   
 
