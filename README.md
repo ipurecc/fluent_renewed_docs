@@ -188,19 +188,19 @@ Paragraph:SetValue("Updated text!") -- Updates content
 
 #### Parameters:
 
-Title (string): Paragraph title.
+```Title``` (string): Paragraph title.
 
   
 
-Content (string): Paragraph text (supports newlines).
+```Content``` (string): Paragraph text (supports newlines).
 
   
 
-TitleAlignment (string, optional): "Left", "Middle", "Right".
+```TitleAlignment``` (string, optional): "Left", "Middle", "Right".
 
   
 
-ContentAlignment (Enum.TextXAlignment, optional): Text alignment (Left, Center, Right).
+```ContentAlignment``` (Enum.TextXAlignment, optional): Text alignment (Left, Center, Right).
 
   
 
@@ -258,15 +258,15 @@ end
 
 #### Parameters:
 
-Title (string): Button text.
+```Title``` (string): Button text.
 
   
 
-Description (string, optional): Additional text below the title.
+```Description``` (string, optional): Additional text below the title.
 
   
 
-Callback (function): Function called when clicked.
+```Callback``` (function): Function called when clicked.
 
   
 
@@ -376,31 +376,31 @@ Slider:SetValue(3)
 
 #### Parameters:
 
-Title (string): Slider label.
+```Title``` (string): Slider label.
 
   
 
-Description (string, optional): Additional text.
+```Description``` (string, optional): Additional text.
 
   
 
-Default (number): Initial value.
+```Default``` (number): Initial value.
 
   
 
-Min (number): Minimum value.
+```Min``` (number): Minimum value.
 
   
 
-Max (number): Maximum value.
+```Max``` (number): Maximum value.
 
   
 
-Rounding (number): Decimal places for rounding.
+```Rounding``` (number): Decimal places for rounding.
 
   
 
-Callback (function): Called with new value.
+```Callback``` (function): Called with new value.
 
   
 
@@ -408,11 +408,11 @@ Methods:
 
   
 
-OnChanged(callback): Fires when the value changes.
+```OnChanged```(callback): Fires when the value changes.
 
   
 
-SetValue(value): Sets the slider value.
+```SetValue```(value): Sets the slider value.
 
   
 
@@ -454,19 +454,19 @@ Dropdown:SetValue("two")
 
 #### Parameters:
 
-Title (string): Dropdown label.
+```Title``` (string): Dropdown label.
 
   
 
-Values (table): List of options.
+```Values``` (table): List of options.
 
   
 
-Multi (boolean): Allow multiple selections (default: false).
+```Multi``` (boolean): Allow multiple selections (default: false).
 
   
 
-Default (string or table): Initial selection(s).
+```Default``` (string or table): Initial selection(s).
 
   
 
@@ -474,15 +474,15 @@ Methods:
 
   
 
-OnChanged(callback): Fires when selection changes.
+```OnChanged```(callback): Fires when selection changes.
 
   
 
-SetValue(value): Sets the selected value(s) (string for single, table for multi).
+```SetValue```(value): Sets the selected value(s) (string for single, table for multi).
 
   
 
-SetValues(values): Updates the list of options.
+```SetValues```(values): Updates the list of options.
 
   
 
@@ -614,15 +614,15 @@ Colorpicker:SetValueRGB(Color3.fromRGB(0, 255, 140))
 
 #### Parameters:
 
-Title (string): Colorpicker label.
+```Title``` (string): Colorpicker label.
 
   
 
-Default (Color3): Initial color.
+```Default``` (Color3): Initial color.
 
   
 
-Transparency (number, optional): Initial transparency (0 to 1).
+```Transparency``` (number, optional): Initial transparency (0 to 1).
 
   
 
@@ -630,11 +630,11 @@ Methods:
 
   
 
-OnChanged(callback): Fires when color or transparency changes.
+```OnChanged```(callback): Fires when color or transparency changes.
 
   
 
-SetValueRGB(color): Sets the color.
+```SetValueRGB```(color): Sets the color.
 
   
 
@@ -744,23 +744,23 @@ Keybind:SetValue("MB2", "Toggle")
 
 ##### Parameters:
 
-Title (string): Keybind label.
+```Title``` (string): Keybind label.
 
   
 
-Mode (string): "Always", "Toggle", or "Hold".
+```Mode``` (string): "Always", "Toggle", or "Hold".
 
   
 
-Default (string): Initial key (e.g., "LeftControl", "MB1", "MB2").
+```Default``` (string): Initial key (e.g., "LeftControl", "MB1", "MB2").
 
   
 
-Callback (function): Called when keybind is activated (true/false).
+```Callback``` (function): Called when keybind is activated (true/false).
 
   
 
-ChangedCallback (function): Called when the keybind is reassigned.
+```ChangedCallback``` (function): Called when the keybind is reassigned.
 
   
 
@@ -768,19 +768,19 @@ Methods:
 
   
 
-OnClick(callback): Fires when the keybind is toggled (Toggle mode only).
+```OnClick```(callback): Fires when the keybind is toggled (Toggle mode only).
 
   
 
-OnChanged(callback): Fires when the keybind changes.
+```OnChanged```(callback): Fires when the keybind changes.
 
   
 
-GetState(): Returns whether the keybind is active.
+```GetState()```: Returns whether the keybind is active.
 
   
 
-SetValue(key, mode): Sets the key and mode.
+```SetValue```(key, mode): Sets the key and mode.
 
   
 
@@ -828,27 +828,27 @@ end)
 
 #### Parameters:
 
-Title (string): Input label.
+```Title``` (string): Input label.
 
   
 
-Default (string): Initial text.
+```Default``` (string): Initial text.
 
   
 
-Placeholder (string): Placeholder text.
+```Placeholder``` (string): Placeholder text.
 
   
 
-Numeric (boolean): Restrict to numbers (default: false).
+```Numeric``` (boolean): Restrict to numbers (default: false).
 
   
 
-Finished (boolean): Call callback only on Enter (default: false).
+```Finished``` (boolean): Call callback only on Enter (default: false).
 
   
 
-Callback (function): Called with new text.
+```Callback``` (function): Called with new text.
 
   
 
@@ -856,11 +856,11 @@ Callback (function): Called with new text.
 
   
 
-OnChanged(callback): Fires when the input changes.
+```OnChanged```(callback): Fires when the input changes.
 
   
 
-Dialog
+## Dialog
 
 Creates a modal dialog with buttons (triggered via Window:Dialog).
 
@@ -888,15 +888,15 @@ Buttons = {
 
 #### Parameters:
 
-Title (string): Dialog title.
+```Title``` (string): Dialog title.
 
   
 
-Content (string): Dialog message.
+```Content``` (string): Dialog message.
 
   
 
-Buttons (table): List of buttons with Title and Callback.
+```Buttons``` (table): List of buttons with Title and Callback.
 
   
 
@@ -926,19 +926,19 @@ Duration = 5  -- Seconds, nil for persistent
 
 #### Parameters:
 
-Title (string): Notification title.
+```Title``` (string): Notification title.
 
   
 
-Content (string): Main message.
+```Content``` (string): Main message.
 
   
 
-SubContent (string, optional): Secondary message.
+```SubContent``` (string, optional): Secondary message.
 
   
 
-Duration (number, optional): Time before auto-close.
+```Duration``` (number, optional): Time before auto-close.
 
   
 
@@ -972,27 +972,27 @@ Methods:
 
   
 
-SetLibrary(library): Links to Fluent library.
+```SetLibrary```(library): Links to Fluent library.
 
   
 
-SetFolder(path): Sets config save location.
+```SetFolder```(path): Sets config save location.
 
   
 
-IgnoreThemeSettings(): Excludes theme settings from configs.
+```IgnoreThemeSettings```(): Excludes theme settings from configs.
 
   
 
-SetIgnoreIndexes(indexes): Ignores specific elements.
+```SetIgnoreIndexes```(indexes): Ignores specific elements.
 
   
 
-BuildConfigSection(tab): Adds save/load UI to a tab.
+```BuildConfigSection```(tab): Adds save/load UI to a tab.
 
   
 
-LoadAutoloadConfig(): Loads a marked auto-load config.
+```LoadAutoloadConfig```(): Loads a marked auto-load config.
 
   
 
@@ -1016,15 +1016,15 @@ Methods:
 
   
 
-SetLibrary(library): Links to Fluent library.
+```SetLibrary```(library): Links to Fluent library.
 
   
 
-SetFolder(path): Sets interface save location.
+```SetFolder```(path): Sets interface save location.
 
   
 
-BuildInterfaceSection(tab): Adds theme/interface UI to a tab.
+```BuildInterfaceSection```(tab): Adds theme/interface UI to a tab.
 
   
 
@@ -1062,9 +1062,9 @@ Fluent Renewed supports over 50 themes, including:
 
 Set a theme in the window config or via InterfaceManager UI. Check the GitHub repository for the full list.
 
-Advanced Usage
+## Advanced Usage
 
-Selecting a Tab
+### Selecting a Tab
 
 Select a tab programmatically using Window:SelectTab(index).
 
